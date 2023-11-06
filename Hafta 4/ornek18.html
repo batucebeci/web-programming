@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Müşteri Kayıt Formu</title>
+    </head>
+    <body bgcolor="white" text="#000000">
+        <h2><font color="#ccbbdd">Müşteri Kayıt Formu</font></h2>
+        <h3>
+            <form action="hedefdosya.htm" method="post" name="frmMusteri">
+            <table>
+                <tr>
+                    <td><b>Adı:</b></td>
+                    <td><input type="text" name="txtAdi" size="30"></td>
+                </tr>
+                <tr>
+                    <td><b>Soyadı:</b></td>
+                    <td><input type="text" name="txtSoydi" size="30"></td>
+                </tr>
+                <tr>
+                    <td><b>E-mail:</b></td>
+                    <td><input type="text" name="txtEmail" size="30"></td>
+                </tr>
+                <tr>
+                    <td><b>Adres:</b></td>
+                    <td><input type="text" name="txtAdres" size="43"></td>
+                </tr>
+                <tr>
+                    <td><b>Şehir,Ülke,Posta Kodu:</b></td>
+                    <td><input type="text" name="txtŞehir" size="20"></td> &nbsp;
+                    <INPUT type="text" name="txtUlke" size="20"> &nbsp;
+                        <INPUT type="text" name="txtPostaKodu" size="10"></TD>
+                </tr>
+                <tr>
+                    <td><b>Açıklama:</b></td>
+                    <td><textarea name="textareaAciklama" cols="30" rows="2">Buraya herhangi bir acıklama yazınız.</textarea></td>
+                </tr>
+                <tr>
+                    <td><b>Yaş:</b></td>
+                    <td><select name="cboxYas" size="1">
+                        <option value="0">0-11</option>
+                        <option value="1">12-19</option>
+                        <option value="2">20-29</option>
+                        <option value="3">30-39</option>
+                        <option value="4">40+</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><b>Çalışmalarımızı başarılı buluyor musunuz? :</b></td>
+                    <td><input type="radio" name="radMailListesi" checked value="evet">Evet</td>
+                    <td><input type="radio" name="radMailListesi" checked value="hayir">Hayir</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="kaydet" value="Kaydet"></td>
+                    <td><input type="reset" name="temizle" ="Temizle"></td>
+                </tr>
+            </table>
+        </form>
+        </h3> 
+    </body>
+</html>
