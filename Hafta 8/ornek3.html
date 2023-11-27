@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <style>
+            .yaziStili{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="yazi1">Bu birinci paragraftır.</p>
+        <p name="yazi2">Bu ikinci paragraftır</p>
+        <p name="yazi2">Bu üçüncü paragraftır</p>
+        <p class="yaziStili">Bu dördüncü paragraftır</p>
+        <p class="yaziStili">Bu beşinci paragraftır</p>
+        <script>
+            document.getElementById("yazi1").innerText="Birinci paragraf değişti";
+            document.getElementsByName("yazi2")[0].innerText="İkinci prgrf değişti";
+            document.getElementsByName("yazi2")[1].innerText="Üçüncü prgrf değişti";
+            document.getElementsByClassName("yaziStili")[0].innerText="Yatık paragraflardan birincisi değişti";
+            document.getElementsByClassName("yaziStili")[1].innerText="Yatık paragraflardan ikincisi değişti";
+        </script>
+    </body>
+</html>

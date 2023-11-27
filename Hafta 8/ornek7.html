@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="bilgi"></p>
+    <script>
+        var eleman = document.getElementById("bilgi");
+        bilgi.innerHTML="navigator.appName = " + window.navigator.appName + "<hr>";
+        bilgi.innerHTML+="navigator.appVersion= " + window.navigator.appVersion+"<hr>";
+        bilgi.innerHTML+="navigator.platform= " + window.navigator.platform+"<hr>";
+
+        var strVersion=window.navigator.appVersion;
+        var sonuc="";
+        if(strVersion.indexOf("OPR") > -1) sonuc="Opera";
+        else if(strVersion.indexOf("Edge") > -1) sonuc="Edge";
+        else if(strVersion.indexOf("Chrome") > -1) sonuc="Chrome";
+        else if(strVersion.indexOf("rv:11") > -1) sonuc="Internet Explorer";
+        bilgi.innerHTML += "Sonuç = " + sonuc + "<hr>";
+
+    </script>
+</body>
+</html>

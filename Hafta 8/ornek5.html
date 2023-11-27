@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function resimDegistir(resimDosyasiAdi){
+                document.getElementById("resimKutusu").src=resimDosyasiAdi;
+                document.getElementById("resimKutusu").setAttribute("height",100);
+                document.getElementById("resimKutusu").style.border="1px solid black";
+
+            }
+        </script>
+    </head>
+    <body>
+        <img src="resim1.jpg" width="200" id="resimKutusu"/>
+        <button onclick="resimDegistir('resim2.jpg');">Resim Degistir</button>
+    </body>
+</html>

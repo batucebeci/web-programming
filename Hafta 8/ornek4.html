@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function resimYukle(resimDosyasiAdi){
+                var resimHTMLKodlari="<img src=\"" + resimDosyasiAdi + "\"/>";
+                document.getElementById("hucre1").innerHTML=resimHTMLKodlari;
+            }
+            function yaziYukle(metin){
+                document.getElementById("hucre2").innerText=metin;
+            }
+        </script>
+    </head>
+    <body>
+        <table border="1" width="400" height="200">
+            <tr>
+                <td id="hucre1"> </td>
+                <td id="hucre2"> </td>
+            </tr>
+        </table>
+        <button onclick="resimYukle('resim1.jpg');">Resim Göster</button>
+        <button onclick="yaziYukle('bu bir yazıdır.');">Yazı goster</button>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="bilgi"></p>
+    <script>
+        var eleman=document.getElementById("bilgi");
+        bilgi.innerHTML="Tarayıcı Genişliği = " + window.innerWidth + "px</br>";
+        bilgi.innerHTML=bilgi.innerHTML+"Tarayıcı Yüksekliği=" + window.innerHeight+"px";
+        bilgi.innerHTML=bilgi.innerHTML+"<hr>"; 
+        bilgi.innerHTML=bilgi.innerHTML+"Ekran Genişliği=" + window.screen.width + "px</br>";
+        bilgi.innerHTML=bilgi.innerHTML+"Ekran Yüksekliği=" + window.screen.height+"px";
+        bilgi.innerHTML=bilgi.innerHTML+"<hr>";
+        bilgi.innerHTML=bilgi.innerHTML+"Ekran Çözünürlüğü= " + window.screen.pixelDepth+ "bit</br>";
+        bilgi.innerHTML=bilgi.innerHTML+"<hr>";
+    </script>
+</body>
+</html>
