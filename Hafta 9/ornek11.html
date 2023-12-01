@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({
+                        left: '250px',
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({
+                        left: '+=1000px'
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var div=$("div");
+                    div.animate({left: '200'} , "fast");
+                    div.animate({height: '300px', opacity: '0.4'}, "slow");
+                    div.animate({width: '300px', opacity: '0.8'}, "slow");
+                    div.animate({height: '100px', opacity: '0.4'}, "slow");
+                    div.animate({width: '100px', opacity: '0.8'}, "slow");
+                    div.animate({left: '10'}, "fast");
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <button>Animasyona başla!</button>
+        <p>Varsayılan olarak tüm HTML elemanları sayfa içerisinde statik bir konumdadır ve boyut ve renk gibi özellikleri de sabittir.CSS sayesinde belirlenen özelliklersayfa içinde değişebilir</p>
+        <p>Bir önceki konumuna göre hareketini güncelleyen kutu animasyonu</p>
+        <p>Animasyonların belirli bir sırada gerçekleştirilmesi</p>
+        <div style="background-color: #21adbf;height: 100px;width: 100px;position: absolute;"></div>
+    </body>
+</html>

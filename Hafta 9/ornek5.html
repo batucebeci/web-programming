@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide(1000);
+                });
+                $("#show").click(function(){
+                    $("p").show(1000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>jquery ile paragraf gizle , göster !!</p>
+        <button id="hide">Gizle</button>
+        <button id="show">Göster</button>
+    </body>
+</html>
