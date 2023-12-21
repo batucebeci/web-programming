@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({
+                        left: '250px',
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button>Animasyona başla!</button>
+        <p>Varsayılan olarak tüm HTML elemanları sayfa içerisinde statik bir konumdadır ve boyut ve renk gibi özellikleri de sabittir.CSS sayesinde belirlenen özelliklersayfa içinde değişebilir</p>
+        <div style="background-color: #98bf21;height: 100px;width: 100px;position: absolute;"></div>
+    </body>
+</html>

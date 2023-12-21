@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideDown("slow");
+                });
+            });
+        </script>
+        <style>
+            #panel,#flip{
+                padding: 5px;
+                text-align: center;
+                background-color: rgb(20, 207, 220);
+                border: solid 1px #c3c3c3;
+            }
+            #panel{
+                padding: 50px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="flip">Panel'i açmak için tıklayınız!</div>
+        <div id="panel">jQuery kayan panel örneği...</div>
+    </body>
+</html>
